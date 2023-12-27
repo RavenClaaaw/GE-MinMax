@@ -12,10 +12,10 @@ public class MaxFloat {
         max.values[1] = (float)20.5;
         max.values[2] = (float)30.5;
 
-        System.out.println("MAX-VALUE:- " + max.getMax());
+        System.out.println("MAX-VALUE:- " + max.findMax());
     }
 
-    public Float getMax(){
+    public Float findMax(){
         Float maxV = this.values[0];
 
         for(Float value : values){

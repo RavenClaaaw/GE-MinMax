@@ -12,10 +12,10 @@ public class MaxInteger {
         max.values[1] = 20;
         max.values[2] = 30;
 
-        System.out.println("MAX-VALUE:- " + max.getMax());
+        System.out.println("MAX-VALUE:- " + max.findMax());
     }
 
-    public Integer getMax(){
+    public Integer findMax(){
         Integer maxV = this.values[0];
 
         for(Integer value : values){
