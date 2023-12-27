@@ -1,21 +1,21 @@
-public class MaxValue {
+public class MaxInteger {
     public Integer[] values;
     
-    MaxValue(int N){
+    MaxInteger(int N){
         this.values = new Integer[N];
     }
 
     public static void main(String[] args) {
-        MaxValue minmax = new MaxValue(3);
+        MaxInteger max = new MaxInteger(3);
 
-        minmax.values[0] = 10;
-        minmax.values[1] = 20;
-        minmax.values[2] = 30;
+        max.values[0] = 10;
+        max.values[1] = 20;
+        max.values[2] = 30;
 
-        System.out.println("MAX-VALUE:- " + minmax.findMax());
+        System.out.println("MAX-VALUE:- " + max.getMax());
     }
 
-    public Integer findMax(){
+    public Integer getMax(){
         Integer maxV = this.values[0];
 
         for(Integer value : values){
