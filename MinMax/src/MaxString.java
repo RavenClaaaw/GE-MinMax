@@ -11,17 +11,8 @@ public class MaxString {
         max.values[0] = "Apple";
         max.values[1] = "Banana";
         max.values[2] = "Orange";
-
-        System.out.println("MAX-VALUE:- " + max.findMax());
-    }
-
+      
     public String findMax(){
-        String maxV = this.values[0];
-
-        for(String value : values){
-            if(maxV.compareTo(value) < 0) maxV = value;
-        }
-
-        return maxV;
+        System.out.println("MAX-VALUE:- " + max.getMax());
     }
 }
