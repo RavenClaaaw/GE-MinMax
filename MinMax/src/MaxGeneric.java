@@ -14,6 +14,7 @@ public class MaxGeneric<T extends Comparable<T>> {
             if(maxV.compareTo(value) < 0) maxV = value;
         }
         
+        System.out.println("MAX VALUE:- " + maxV);
         return maxV;
     }
 
@@ -22,18 +23,21 @@ public class MaxGeneric<T extends Comparable<T>> {
         findMaxInt.values.add(0, 1);
         findMaxInt.values.add(1, 2);
         findMaxInt.values.add(2, 3);
-        System.out.println("Max Integer: " + findMaxInt.findMax());
+        // System.out.println("Max Integer: " + findMaxInt.findMax());
+        findMaxInt.findMax();
 
         MaxGeneric<Float> findMaxFloat = new MaxGeneric<>(3);
         findMaxFloat.values.add(0, 1.1f);
         findMaxFloat.values.add(1, 2.2f);
         findMaxFloat.values.add(2, 3.3f);
-        System.out.println("Max Float: " + findMaxFloat.findMax());
+        // System.out.println("Max Float: " + findMaxFloat.findMax());
+        findMaxFloat.findMax();
 
         MaxGeneric<String> findMaxString = new MaxGeneric<>(3);
         findMaxString.values.add(0, "Apple");
         findMaxString.values.add(1, "Peach");
         findMaxString.values.add(2, "Banana");
-        System.out.println("Max String: " + findMaxString.findMax());
+        // System.out.println("Max String: " + findMaxString.findMax());
+        findMaxString.findMax();
     }
 }
